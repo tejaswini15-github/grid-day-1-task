@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 10px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 100vh;
+    gap: 10px;
+    color: white;
+}
+.item1 ,
+.item2 ,
+.item3 ,
+.item4 ,
+.item5 ,
+.item6 ,
+.item7 ,
+.item8 {
+        background-repeat: no-repeat;
+}
+.item1 {
+    background-image: url(https://www.w3schools.com/w3images/house5.jpg);
+}
+.item2 {
+    background-image: url(https://www.w3schools.com/w3images/house2.jpg);
+}
+.item3 {
+    background-image: url(https://www.w3schools.com/w3images/house3.jpg);
+}
+.item4 {
+    background-image: url(https://www.w3schools.com/w3images/house4.jpg);
+}
+.item5 {
+    background-image: url(https://www.w3schools.com/w3images/house2.jpg);
+}
+.item6 {
+    background-image: url(https://www.w3schools.com/w3images/house5.jpg);
+}
+.item7 {
+    background-image: url(https://www.w3schools.com/w3images/house4.jpg);
+}
+.item8 {
+    background-image: url(https://www.w3schools.com/w3images/house3.jpg);
+}
+
+h4 {
+    width: 150px;
+    height: 30px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+@media screen and (width >=600px) and (width <=900px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);  
+    }
+    .item1 ,
+    .item2 ,
+    .item3 ,
+    .item4 ,
+    .item5 ,
+    .item6 ,
+    .item7 ,
+    .item8 {
+        height: 50vh;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 599px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;  
+        /* grid-template-rows: 1fr; */
+    }
+    .item1 ,
+    .item2 ,
+    .item3 ,
+    .item4 ,
+    .item5 ,
+    .item6 ,
+    .item7 ,
+    .item8 {
+        height: 50vh;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
